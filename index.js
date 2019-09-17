@@ -1,53 +1,53 @@
-// let bubbleSort = (inputArr) => {
-//     let len = inputArr.length;
-//     for (let i = 0; i < len; i++) {
-//         for (let j = 0; j < len; j++) {
-//             if (inputArr[j] > inputArr[j + 1]) {
-//                 let tmp = inputArr[j];
-//                 inputArr[j] = inputArr[j + 1];
-//                 inputArr[j + 1] = tmp;
-//             }
-//         }
-//     }
-//     return inputArr;
-// };
-
-function bubbleSort(items) {
-    var length = items.length,
-        sortCount = 0;
-        console.log("I got here")
-        console.log(items.toString())
-         for (var i = 0; i < length -1 ; i++) {
-                //Notice that j < (length - i)
-                    for (var j = 0; j < (length - i - 1); j++) {
-                     //Compare the adjacent positions
-                         if (items[j] > items[j + 1]) {
-            
-                
-                         //Swap the numbers
-                     var tmp = items[j];  //Temporary variable to hold the current number
-                     items[j] = items[j + 1]; //Replace current number with adjacent number
-                     items[j + 1] = tmp; //Replace adjacent number with current number
-               
-                 }
-            
-              }
-        sortCount++;
-        console.log(`Pass  ${sortCount}  : ${items}`);
-    }
-    console.log(`This is the final pass: ${items}`)
-    // items.forEach(element => {
-    //     {
-
-    //     }
-    // });
-    for(var y = 5; y < length; y++) {
-        if(y % 2 !== 0) {
-            items[y] += 5;
+let bubbleSort = (inputArr) => {
+    let len = inputArr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (inputArr[j] > inputArr[j + 1]) {
+                let tmp = inputArr[j];
+                inputArr[j] = inputArr[j + 1];
+                inputArr[j + 1] = tmp;
+            }
         }
     }
-    console.log(`the new array is ${items}`);
-}
+    return inputArr;
+};
+
+// function bubbleSort(items) {
+//     var length = items.length,
+//         sortCount = 0;
+//         console.log("I got here")
+//         console.log(items.toString())
+//          for (var i = 0; i < length -1 ; i++) {
+//                 //Notice that j < (length - i)
+//                     for (var j = 0; j < (length - i - 1); j++) {
+//                      //Compare the adjacent positions
+//                          if (items[j] > items[j + 1]) {
+            
+                
+//                          //Swap the numbers
+//                      var tmp = items[j];  //Temporary variable to hold the current number
+//                      items[j] = items[j + 1]; //Replace current number with adjacent number
+//                      items[j + 1] = tmp; //Replace adjacent number with current number
+               
+//                  }
+            
+//               }
+//         sortCount++;
+//         console.log(`Pass  ${sortCount}  : ${items}`);
+//     }
+//     console.log(`This is the final pass: ${items}`)
+//     // items.forEach(element => {
+//     //     {
+
+//     //     }
+//     // });
+//     for(var y = 5; y < length; y++) {
+//         if(y % 2 !== 0) {
+//             items[y] += 5;
+//         }
+//     }
+//     console.log(`the new array is ${items}`);
+// }
 
 let _data = [2,4,10,5,7,9, 4, 7, 1];
 bubbleSort(_data) 
