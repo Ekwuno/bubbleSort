@@ -15,6 +15,7 @@
 function bubbleSort(items) {
     var length = items.length,
         sortCount = 0;
+        console.log("I got here")
         console.log(items.toString())
          for (var i = 0; i < length -1 ; i++) {
                 //Notice that j < (length - i)
